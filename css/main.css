@@ -1,0 +1,193 @@
+@charset "UTF-8";
+h2 {
+  color: black;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  font-family: "Work Sans", sans-serif, sans-serif, "Crimson Text", serif, serif;
+}
+
+.btn-primary {
+  background-color: #FFFFFF;
+  color: #000;
+  border: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+.btn-primary:hover {
+  background-color: rgba(0, 0, 0, 0.66);
+  color: #FFFFFF;
+}
+
+.btn-secondary {
+  background-color: #212529;
+  color: #FFFFFF;
+  border: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.img-circle {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+  transition: transform 0.3s ease-in-out;
+}
+.img-circle:hover {
+  transform: scale(1.05);
+}
+
+.navbar-section {
+  background-color: #74C69D;
+  color: white;
+  padding: 0.5rem 0;
+  text-align: center;
+  max-width: 1175px;
+  min-height: 50px;
+}
+.navbar-section .nav-link {
+  color: white;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease-in-out;
+}
+.navbar-section .nav-link:hover {
+  color: #212529;
+}
+.navbar-section .navbar-toggler {
+  border-color: white;
+}
+.navbar-section .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.navbar-section .navbar-logo {
+  max-height: 50px;
+}
+
+.footer-section {
+  color: #FFFFFF;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.footer-section .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+@media (min-width: 768px) {
+  .footer-section .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+  }
+}
+.footer-section a img {
+  height: 24px;
+  max-width: 100%;
+  height: auto;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease;
+}
+.footer-section a img:hover {
+  transform: scale(1.1);
+}
+.footer-section p {
+  margin: 0;
+  font-size: 0.875rem;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .footer-section p {
+    text-align: right;
+  }
+}
+
+section {
+  padding: 2rem 0;
+}
+@media (min-width: 768px) {
+  section {
+    padding: 4rem 0;
+  }
+}
+
+.navbar-section {
+  background-color: #74C69D;
+}
+.navbar-section #navbarNav .nav-link {
+  color: white;
+  transition: color 0.2s;
+}
+.navbar-section #navbarNav .nav-link:hover {
+  color: #212529;
+}
+
+.welcome-section {
+  background-color: #74C69D;
+  padding: 4rem 0;
+  background-color: #74C69D;
+  padding: 4rem 0;
+}
+
+.partner-section {
+  background-color: #F5F5F5;
+  text-align: center;
+  padding: 4rem;
+  background-color: #F5F5F5;
+  padding: 4rem 0;
+}
+
+.features-section {
+  background-color: #F5F5F5;
+  padding: 4rem 0;
+  background-color: #F5F5F5;
+  padding: 4rem 0;
+}
+
+.team-section {
+  background-color: #F5F5F5;
+  padding: 4rem 0;
+  text-align: center;
+  background-color: #F5F5F5;
+  padding: 4rem 0;
+}
+
+.section-title {
+  color: #00aa00; /* зелений колір тексту */
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 0 0 2px #000; /* додає товщини обводці */
+}
+
+.contaktus-section {
+  background-color: #F5F5F5;
+  padding: 4rem 0;
+  text-align: center;
+  background-color: #F5F5F5;
+  padding: 4rem 0;
+}
+
+.footer-section {
+  background-color: #74C69D;
+  height: 125px;
+  max-width: 1440px;
+  background-color: #74C69D;
+  padding: 4rem 0;
+}
+
+/*# sourceMappingURL=main.css.map */

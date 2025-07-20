@@ -1,0 +1,59 @@
+@use 'variables' as variables;
+
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  @include flex-center;
+}
+ 
+@mixin img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+@mixin section-padding {
+  padding: variables.$spacing-lg 0;
+
+  @media (min-width: 768px) {
+    padding: variables.$spacing-xl 0;
+  }
+}
+
+
+@mixin rounded-circle {
+  border-radius: 50%;
+}
+
+@mixin btn-outline-primary {
+  border: 1px solid variables.$primary-color;
+  color: variables.$primary-color;
+  background: transparent;
+
+  &:hover {
+    background-color: variables.$primary-color;
+    color: white;
+  }
+}
+
+@mixin section-padding {
+  padding: variables.$spacing-lg 0;
+
+  @media (min-width: 768px) {
+    padding: variables.$spacing-xl 0;
+  }
+}
+
+@mixin text-center-block {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin transition($property: all, $time: 0.3s, $ease: ease-in-out) {
+  transition: $property $time $ease;
+}

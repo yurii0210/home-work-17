@@ -1,0 +1,17 @@
+@use '../utilities/variables' as variables;
+@use '../utilities/mixins' as mixins;
+
+.img-fluid {
+  @include mixins.img-fluid;
+}
+
+.img-circle {
+  @include mixins.img-fluid;
+  @include mixins.rounded-circle;
+  margin-bottom: variables.$spacing-sm;
+  @include mixins.transition(transform);
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}

@@ -1,0 +1,85 @@
+@use '../utilities/variables' as variables;
+@use '../utilities/mixins' as mixins;
+
+section {
+  @include mixins.section-padding;
+}
+
+@mixin section-style($bg-color) {
+  background-color: $bg-color;
+  padding: 4rem 0;
+}
+
+.navbar-section {
+  background-color: variables.$primary-color;
+
+   #navbarNav {
+    .nav-link {
+      color: white;
+      transition: color 0.2s;
+
+      &:hover {
+        color: variables.$dark-color;
+      }
+    }
+  }
+}
+
+.welcome-section {
+  background-color: variables.$primary-color;
+  padding: 4rem 0;
+  @include section-style(variables.$primary-color);
+}
+
+
+.partner-section {
+  background-color: variables.$light-color;
+  text-align: center;
+  padding: 4rem;
+  @include section-style(variables.$light-color);
+  
+}
+
+.features-section {
+  background-color: variables.$light-color;
+  padding: 4rem 0;
+  @include section-style(variables.$light-color);
+}
+.team-section{
+  background-color: variables.$light-color;
+  padding: 4rem 0;
+  text-align: center;
+   @include section-style(variables.$light-color);
+}
+
+.section-title {
+  color: #00aa00; /* зелений колір тексту */
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000,
+    0 0 2px #000; /* додає товщини обводці */
+}
+
+
+
+.contaktus-section {
+  background-color: variables.$light-color;
+  padding: 4rem 0;
+  text-align: center;
+   @include section-style(variables.$light-color);
+
+}
+
+
+.footer-section {
+  background-color: variables.$primary-color;
+  height: variables.$footer-height;
+  max-width: variables.$max-container;
+   @include section-style(variables.$primary-color);
+}

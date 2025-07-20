@@ -1,0 +1,42 @@
+@use '../utilities/variables' as variables;
+@use '../utilities/mixins' as mixins;
+
+.footer-section {
+  color: variables.$text-color;
+  padding-top: 50px;
+  padding-bottom: 50px;
+ 
+  .container {
+    @include mixins.flex-center;
+    flex-direction: column;
+    gap: variables.$spacing-sm;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0;
+    }
+  }
+
+  a img {
+    height: 24px;
+    @include mixins.img-fluid;
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.875rem;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      text-align: right;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+@use '../utilities/variables' as variables;
+@use '../utilities/mixins' as mixins;
+
+.navbar-section {
+  background-color: variables.$primary-color;
+  color: white;
+  padding: variables.$spacing-sm 0;
+  text-align: center;
+  max-width: 1175px;
+  min-height: 50px;
+
+  .nav-link {
+    color: white;
+    font-weight: 500;
+    padding: variables.$spacing-sm variables.$spacing-md;
+    @include mixins.transition(color, 0.3s);
+
+    &:hover {
+      color: variables.$dark-color;
+    }
+  }
+
+  .navbar-toggler {
+    border-color: white;
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+  }
+
+  .navbar-logo {
+    max-height: 50px;
+  }
+}

@@ -1,0 +1,22 @@
+@use '../utilities/variables' as variables;
+@use '../utilities/mixins' as mixins;
+
+.btn-primary {
+  background-color: variables.$text-color;  // білий
+  color: #000;
+  border: none;
+  transition: background-color 0.3s, color 0.3s;
+ 
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.66);
+    color: variables.$text-color;
+  }
+}
+
+.btn-secondary {
+  background-color: variables.$dark-color;
+  color: variables.$text-color;
+  border: none;
+  transition: background-color 0.3s, color 0.3s;
+ }

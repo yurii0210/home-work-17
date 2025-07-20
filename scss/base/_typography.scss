@@ -1,0 +1,7 @@
+@use '../utilities/variables' as vars;
+
+body {
+  font-family: vars.$font-main, sans-serif, vars.$font-heading, serif;
+  min-width: vars.$max-container;
+}
+
